@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.name = 'fl-rocco'
   s.version = '1.0.0'
-  s.date = '2011-01-10'
+  s.date = '2012-01-10'
 
   s.description = "Docco in Ruby"
   s.summary     = s.description
@@ -47,6 +47,7 @@ Gem::Specification.new do |s|
     test/test_reported_issues.rb
     test/test_skippable_lines.rb
     test/test_source_list.rb
+    test/test_stylesheet.rb
   ]
   # = MANIFEST =
 

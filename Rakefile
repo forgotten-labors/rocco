@@ -72,7 +72,7 @@ if defined?(Gem)
   SPEC = eval(File.read('rocco.gemspec'))
 
   def package(ext='')
-    "pkg/rocco-#{SPEC.version}" + ext
+    "pkg/fl-rocco-#{SPEC.version}" + ext
   end
 
   desc 'Build packages'
@@ -98,7 +98,7 @@ end
 # GEMSPEC ===================================================================
 
 file 'rocco.gemspec' => FileList['{lib,test,bin}/**','Rakefile'] do |f|
-  version = File.read('lib/rocco.rb')[/VERSION = '(.*)'/] && $1
+  version = File.read('lib/rocco/version.rb')[/VERSION = '(.*)'/] && $1
   date = Time.now.strftime("%Y-%m-%d")
   spec = File.
     read(f.name).
